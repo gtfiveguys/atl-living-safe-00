@@ -1,16 +1,8 @@
-.hello-background {
-  background-color: #faf6f3;
-  width: 100%;
-  height: 100%;
-  overflow-y: scroll;
-}
-
 .hello-container {
   /* background-color: #faf6f3; */
-  width: 80%;
-  height: 80%;
-  margin-top: 12%;
-  margin-left: 10%;
+  width: 100%;
+  height: 100%;
+  padding-top: 12%;
   overflow-y: scroll;
 }
 
