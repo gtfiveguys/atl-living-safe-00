@@ -1,0 +1,58 @@
+#recommendations .List {
+  width: 300px;
+  margin-top: 0px;
+  height: 740px !important;
+}
+
+#recommendations .ListItemEven,
+#recommendations .ListItemOdd {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  justify-content: start;
+  width: 100px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+}
+
+#recommendations .ListItemEven {
+  background-color: #f8f8f8;
+}
+
+.List p {
+  margin-bottom: 0;
+}
+
+.List .apt-ranking {
+  color: green;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: rgb(15, 46, 15);
+  display: grid;
+  grid-column: 1;
+  align-self: flex-start;
+}
+
+.List .apt-name {
+  margin-right: 5px;
+  display: grid;
+  grid-column: 2 / 11;
+  align-self: flex-start;
+  margin-top: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  color: rgb(15, 46, 15);
+}
+
+.List .apt-score {
+  color: green;
+  left: 230px;
+  margin-top: 10px;
+  display: grid;
+  grid-column: 11;
+  align-self: flex-start;
+}

@@ -1,0 +1,353 @@
+/* Global */
+
+.dashboard {
+  padding: 30px 100px;
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+  background-color: #faf6f3;
+
+  display: grid;
+  grid-auto-rows: min-content;
+  overflow-x: scroll;
+}
+
+.fas {
+  cursor: pointer;
+}
+
+.added-icon {
+  color: tomato !important;
+}
+
+.added-text {
+  color: tomato;
+  font-weight: 500;
+}
+
+.no-result {
+  color: #a8a8a8;
+}
+
+/* Header */
+
+.header-container {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(60px, 1fr));
+}
+
+.header-container .title {
+  display: block;
+  grid-column: 1 / span 6;
+  color: rgb(185, 159, 164);
+  font-size: 20px;
+}
+
+.header-container .greeting {
+  margin: 0;
+  display: block;
+  grid-column: 1 / span 6;
+
+  font-size: 80px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #8b8b8b;
+  opacity: 60%;
+}
+
+/* Body */
+
+.body-container {
+  margin-top: 20px;
+  margin-right: 0;
+  transition: margin-right 0.5s ease-in-out;
+  max-width: 900px;
+}
+
+.body-container.shrink {
+  margin-right: 200px;
+}
+
+.body-container .header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: solid;
+  border-bottom-width: thin;
+  border-bottom-color: rgb(99, 99, 99);
+}
+
+.body-container .header h2 {
+  display: inline;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+}
+
+.body-container .header button {
+  margin-right: 5px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+  color: rgb(30, 46, 100);
+  /* font-weight: bold; */
+  font-size: 14px;
+  line-height: 20px;
+  border: None;
+  padding-left: 7px;
+  padding-right: 7px;
+  height: 25px;
+  line-height: 25px;
+  width: 100px;
+  border-radius: 2em;
+  box-sizing: border-box;
+  background-color: #f3e4d9;
+  text-align: center;
+}
+
+.body-container .header p {
+  display: inline;
+  margin-left: 5px;
+  color: rgb(94, 94, 94);
+}
+
+/* Apartments */
+
+.apartment {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(60px, 1fr));
+}
+
+.apartment-container p {
+  margin-right: 15px;
+  width: 300px;
+}
+
+.apartment-header p {
+  /* font-weight: bold; */
+  cursor: pointer;
+  text-align: left;
+}
+
+.apartment-header .apt-score {
+  margin-left: -30px;
+}
+
+.fa-sync-alt {
+  font-size: 1rem;
+  margin: 0 10px;
+}
+
+.apartment-row {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+  padding-top: 15px;
+  padding-right: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 3px #ccc;
+  /* filter: blur(5px); */
+  opacity: 60%;
+}
+.apartment-row:hover {
+  background-color: rgb(248, 237, 230);
+}
+.apartment .apt-name {
+  grid-column: 2 / 4;
+}
+
+.apartment-header .apt-name {
+  grid-column: 2 / 4;
+}
+
+.apartment .apt-address {
+  grid-column: 6 / 10;
+}
+
+.apartment-row .apt-name {
+  grid-column: 2 / 3;
+  height: 25px;
+  margin-left: -10px;
+  line-height: 25px;
+  width: 250px;
+  text-align: left;
+  font-size: 14px;
+  vertical-align: middle;
+  border-radius: 2em;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  /* background-color: #ecddcba9; */
+}
+
+.apartment-row .apt-score-low {
+  grid-column: 10 / 12;
+  height: 25px;
+  line-height: 25px;
+  width: 60px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+  border-radius: 2em;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(95, 60, 60);
+  background-color: #ff9f8ea9;
+}
+.apartment-row .apt-score-high {
+  grid-column: 10 / 12;
+  height: 25px;
+  line-height: 25px;
+  width: 60px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+  border-radius: 2em;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(23, 77, 23);
+  background-color: #68d85da9;
+}
+
+.apartment .apt-delete {
+  grid-column: 12;
+  text-align: right;
+}
+
+.collapse-toggle {
+  /* position: absolute; */
+  margin-top: 4px;
+}
+
+/* Collapse list */
+
+.collapse-container {
+  margin-bottom: 20px;
+}
+
+.collapse-container h6 {
+  margin-bottom: 12px;
+}
+
+.type-container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.type-container p {
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+.type-container.title {
+  font-weight: bold;
+
+  margin-bottom: 5px;
+}
+
+.type-container .place-type {
+  grid-column: 2 / 4;
+}
+
+.type-container .place-name {
+  grid-column: 5 / 10;
+}
+
+.type-container .place-score {
+  grid-column: 10 / 12;
+}
+
+.collapse-container .single-type {
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+
+.collapse-container .macro-toggles {
+  color: tomato;
+}
+
+.collapse-container .all-types {
+  margin-right: 7px;
+  font-size: 1rem;
+}
+
+.fa-slash {
+  font-size: 0.6rem;
+  cursor: default;
+}
+
+/* Macro Control Panel */
+
+.control-panel {
+  position: fixed;
+  top: 80px;
+  right: 10px;
+  padding: 20px;
+  width: 250px;
+  height: 550px;
+  z-index: 2;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+  color: #ffffff;
+  background-color: rgb(189, 187, 187);
+  box-shadow: 0 0 5px #ccc;
+  transition: right 0.5s ease-in-out;
+}
+
+.control-panel.show {
+  right: -260px;
+}
+
+.control-panel .heading {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.control-panel .type {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.control-panel .type-name {
+  display: inline;
+}
+
+.control-panel .single-type {
+  color: rgb(214, 214, 214);
+  margin-right: 20px;
+}
+
+.control-panel .fa-times {
+  color: tomato;
+  position: absolute;
+  right: 25px;
+  top: 22px;
+  font-size: 1.5rem;
+  z-index: 3;
+}
+
+.control-panel-collapse-btn {
+  width: 40px;
+  height: 40px;
+  background-color: tomato;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  cursor: pointer;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.control-panel-collapse-btn span {
+  position: fixed;
+  color: rgb(255, 255, 255);
+  margin: 2px 10px;
+  font-size: 1.5rem;
+}

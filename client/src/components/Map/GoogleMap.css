@@ -1,0 +1,57 @@
+html, body, #root {
+  margin: 0;
+  height: 100%;
+}
+
+.map-container {
+  position: relative;
+  height: calc(100vh - 170px);
+}
+
+#map {
+  margin-left: 40px;
+  margin-right: 370px;
+  height: 100%;
+}
+
+#heatmap,
+#route {
+  display: none;
+}
+
+#results {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 40px;
+  height: 100%;
+  width: 300px;
+}
+
+.custom-control {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3%;
+  box-shadow: 0 0 3px #b8b8b8;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 2em;
+}
+
+.custom-control-text {
+  color: rgb(30, 46, 100);
+  /* font-weight: bold; */
+  font-size: 16px;
+  line-height: 35px;
+  padding-left: 7px;
+  padding-right: 7px;
+  width: 195px;
+  border-radius: 2em;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 100;
+  background-color: #f3e4d9;
+  text-align: center;
+}

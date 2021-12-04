@@ -1,0 +1,69 @@
+#pop-up {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 400px;
+  height: 200px;
+  margin-left: -200px;
+  margin-top: -150px;
+  z-index: 100;
+  padding-top: 40px;
+  /* border: 1px solid black; */
+  background-color: white;
+  border-radius: 1em;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: #1e255f;
+  background-color: #e0ccc3a9;
+  box-shadow: 3px 5px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+#pop-up .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+#pop-up span {
+  margin-top: 90px;
+  font-size: 19px;
+  /* font-weight: bold; */
+  /* margin-left: 10px; */
+  color: rgb(59, 59, 59);
+}
+
+/* continue with google */
+#pop-up .sign-in-google {
+  width: 200px;
+  display: grid;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  line-height: 20px;
+  padding: 0.35em 1.2em;
+  border-radius: 2em;
+  /* box-sizing: border-box; */
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 0.5px;
+  text-align: center;
+  border: None;
+  color: rgb(245, 245, 245);
+  background-color: #7599ad;
+  text-align: center;
+}
+
+/* adjust hyperlink */
+#pop-up a {
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
