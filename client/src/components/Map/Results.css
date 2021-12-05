@@ -1,3 +1,7 @@
+.results-container {
+  font-family: "Noto Sans", sans-serif;
+}
+
 .results-container .title {
   /* border: 2px solid #d9dddd; */
   margin: 0;
@@ -9,36 +13,34 @@
   text-align: center;
   line-height: 30px;
   font-weight: bold;
-  font-family: "Noto Sans", sans-serif;
 }
 
 .results-container .top-info-apt {
   position: relative;
 }
 
-.results-container .top-info-apt span {
+.results-container .top-info-apt .like-icon {
   position: absolute;
-  top: 5px;
+  top: 0;
   right: 5px;
 }
 
-/* .results-container .apt-info {
-  box-shadow: 0px 1px 5px 0px rgb(211, 210, 210);
-  padding-top: 10px;
-  border-radius: 10px 10px 0 0;
-  padding-left: 10px;
-  padding-bottom: 10px;
-} */
+.results-container .top-info-apt .icon {
+  position: absolute;
+}
+
+.results-container .top-info-apt p {
+  margin-left: 30px;
+}
 
 .results-container h3 {
   margin: 0;
   margin-right: 10px;
-  /* margin-bottom: 10px; */
+  margin-bottom: 5px;
   font-size: 26px;
-  color: rgb(190, 106, 106);
 }
+
 .results-container .address {
-  /* margin-left: 25px; */
   margin-bottom: 5px;
   font-size: 14px;
   color: rgb(138, 138, 138);
@@ -46,7 +48,6 @@
 .results-container .score {
   color: green;
   font-weight: bold;
-  font-family: "Noto Sans", sans-serif;
 }
 
 .results-container .like-icon {
@@ -65,30 +66,24 @@
 .List .score {
   color: green;
   font-weight: bold;
-  font-family: "Noto Sans", sans-serif;
-  margin-left: 25px;
 }
 
 .results-container .place-name {
-  /* font-weight: bold; */
-  font-family: "Noto Sans", sans-serif;
-  margin-left: 25px;
   color: rgb(190, 106, 106);
-}
-.results-container .place-distance {
-  /* font-weight: bold; */
-  font-family: "Noto Sans", sans-serif;
-  margin-left: 25px;
 }
 .results-container .place-type {
   font-size: 16px;
+  font-weight: bold;
   margin: 0;
-  font-family: "Noto Sans", sans-serif;
+}
+
+.results-container .place-type img {
+  position: absolute;
+  left: 10px;
 }
 
 .results-container .List {
   margin-top: 5px;
-  height: 640px !important;
   border-top: solid;
   border-top-width: thin;
   border-top-color: rgb(99, 99, 99);
@@ -99,16 +94,20 @@
 
 #results.routes .ListItemEven,
 #results.routes .ListItemOdd {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
-  /* width: 100%; */
   justify-content: start;
-  height: 50px;
+  height: 70px;
   position: relative;
-  font-family: "Noto Sans", sans-serif;
   font-weight: 100;
   box-shadow: 0 0 1px rgb(233, 233, 233);
+  display: grid;
+  padding: 10px 0;
+}
+
+#results.routes .ListItemEven p,
+#results.routes .ListItemOdd p {
+  margin-left: 40px;
 }
 
 #results.routes .ListItemEven {

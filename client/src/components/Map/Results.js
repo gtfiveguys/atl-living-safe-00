@@ -39,6 +39,9 @@ const typeIcons = {
   cafe: "https://i.loli.net/2021/12/01/Pi6marj7nSL9G1O.png",
   bank: "https://i.loli.net/2021/12/01/PANzRFkBa719JQG.png",
 };
+
+const listHeightOffset = 270;
+
 function Results(props) {
   const {
     user,
@@ -53,6 +56,9 @@ function Results(props) {
 
   const savedApartments = useRef(null);
   const [isSaved, setIsSaved] = useState(false);
+  const [listHeight, setListHeight] = useState(
+    window.innerHeight - listHeightOffset
+  );
 
   // Get a list of saved apartments
   const getSavedApartments = async () => {
@@ -61,6 +67,14 @@ function Results(props) {
       savedApartments.current = res.data;
     }
   };
+
+  // When component is mounted, add event listener to track window resize and update list height
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      console.log("resize");
+      setListHeight(window.innerHeight - listHeightOffset);
+    });
+  }, []);
 
   // When a user is logged in, get user's saved apartments
   useEffect(() => {
@@ -105,7 +119,7 @@ function Results(props) {
           style={style}
         >
           <p className="place-type">
-            <img src={typeIcons[type]} height="25" width="25" />
+            <img src={typeIcons[type]} height="25" width="25" alt="type-icon" />
             {placeTypes[type]}
           </p>
           <p className="place-name">{destination}</p>
@@ -168,9 +182,11 @@ function Results(props) {
         {/* <div className="apt-info"> */}
         <div className="top-info-apt">
           <h3>{apt_name}</h3>
-          <p className="address">📍 {apt_address}</p>
+          <span className="icon">📍</span>
+          <p className="address">{apt_address}</p>
+          <span className="icon">📊</span>
           <p className="score">
-            📊 {((1 - calculateTotalScore()) * 10).toFixed(2)}
+            {((1 - calculateTotalScore()) * 10).toFixed(2)}
           </p>
           <span className="like-icon">
             <i
@@ -179,11 +195,10 @@ function Results(props) {
             ></i>
           </span>
         </div>
-        {/* </div> */}
         {routesInfo && (
           <List
             className="List"
-            height={400}
+            height={listHeight}
             itemCount={routesInfo.length}
             itemSize={120}
           >
