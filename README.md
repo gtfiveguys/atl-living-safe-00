@@ -13,16 +13,11 @@ The goal of our project is to create a more dynamically safety-oriented apartmen
 
 ## Table of Content
 
-* Description
 * Getting Started
     * Prerequisites
     * Installation
 * Usage
 * Demo Video
-
-## Description
-
-???
 
 ## Getting Started
 
