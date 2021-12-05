@@ -61,11 +61,11 @@
 .travel-mode span {
   position: absolute;
   top: 5px;
-  left: 10px;
+  left: 8px;
 }
 
 .travel-mode span.walking {
-  left: 9px;
+  left: 7px;
 }
 
 .search-container .place-type-select {
