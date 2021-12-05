@@ -60,12 +60,12 @@
 
 .travel-mode span {
   position: absolute;
-  top: 4px;
-  left: 8px;
+  top: 5px;
+  left: 10px;
 }
 
 .travel-mode span.walking {
-  left: 7px;
+  left: 9px;
 }
 
 .search-container .place-type-select {
