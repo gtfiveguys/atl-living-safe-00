@@ -26,8 +26,12 @@ function About() {
         </p>
         <p className="text">
           This website is built with <span className="code">React.js</span> for
-          frontend and <span className="code">Node.js</span> for backend. We
-          adopted multiple machine learning models to extract insights from{" "}
+          frontend and <span className="code">Node.js</span> for backend,
+          deployed on <span className="code">Heroku</span>. The user interface
+          is styled with <span className="code">Bootstrap</span> and is fully
+          mobile-responsive. We adopted multiple machine learning methods,
+          including Gaussian Mixture Model (GMM), to extract valuable and
+          actionable insights from{" "}
           <a
             className="link"
             href="https://www.atlantapd.org/community/community-policing-programs/youth-programs"
@@ -37,7 +41,7 @@ function About() {
           collected by Atlanta Police Department. For more details, see{" "}
           <a
             className="link"
-            href="https://github.com/gtfiveguys/atl-living-safe"
+            href="https://github.com/gtfiveguys/atl-living-safe-00"
           >
             github
           </a>
@@ -52,7 +56,7 @@ function About() {
           >
             form
           </a>{" "}
-          to help us improve this website!
+          to help us improve our website!
         </p>
       </section>
       <section className="team">
@@ -62,11 +66,7 @@ function About() {
             <div key={i} className="person col-12 col-md-6 col-lg-4">
               <img src={person.image} alt="profile-img" className="image" />
               <p className="name">{person.name}</p>
-              {/* <p className="description">{person.description}</p> */}
-              <p className="description">
-                arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc
-                sed blandit libero volutpat sed cras ornare arcu dui vivamus
-              </p>
+              <p className="description">{person.description}</p>
               <div className="contact">
                 <a href={person.contact.LinkedIn} className="linked-in">
                   Linkedin
