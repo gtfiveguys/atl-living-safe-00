@@ -8,6 +8,14 @@ function Hello(props) {
   const dispatch = useDispatch();
 
   const [isLogin, setIsLogin] = useState(false);
+  const [imageFirst, setImageFirst] = useState(window.innerWidth < 992);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setImageFirst(window.innerWidth < 992);
+    });
+  }, []);
+
   useEffect(() => {
     dispatch(setActivePage(0));
 
@@ -21,15 +29,20 @@ function Hello(props) {
     }
   }, [user]);
 
-  return (
-    <div className="hello-container row">
-      <div className="hellopic col-md-6 col-sm-12">
+  const renderPic = () => {
+    return (
+      <div className="hellopic col-lg-7 col-md-12">
         <img
           src="https://i.loli.net/2021/12/01/Fkjict2uOhbe6dT.png"
           alt="home-bg-img"
         />
       </div>
-      <div className="overview col-md-6 col-sm-12">
+    );
+  };
+
+  const renderOverview = () => {
+    return (
+      <div className="overview col-lg-5 col-md-12">
         <h1 className="atltitle">
           Live safer,
           <br /> Live smarter.
@@ -64,6 +77,18 @@ function Hello(props) {
           </a>
         )}
       </div>
+    );
+  };
+
+  return imageFirst ? (
+    <div className="hello-container row">
+      {renderPic()}
+      {renderOverview()}
+    </div>
+  ) : (
+    <div className="hello-container row">
+      {renderOverview()}
+      {renderPic()}
     </div>
   );
 }

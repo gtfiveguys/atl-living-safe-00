@@ -1,28 +1,42 @@
-.hello-container {
-  /* background-color: #faf6f3; */
+.hello-container.row {
+  background-color: #faf6f3;
   width: 100%;
-  height: 100%;
-  padding-top: 12%;
-  overflow-y: scroll;
+  height: max-content;
+  min-height: calc(100vh - 55px);
+  margin: 0;
+  padding: 0 40px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.hellopic {
+  display: grid;
 }
 
 .hellopic img {
   width: 100%;
-  padding: auto 0;
+  align-self: center;
 }
 
 .hello-container .overview {
-  font-family: "Noto Sans", sans-serif;
   color: #5f451e;
-  padding-left: 20px;
-  padding-right: 40px;
-  padding-top: 60px;
+  padding-left: 80px;
+  /* padding-top: 20%; */
+  align-self: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+  .hello-container.row {
+    padding-top: 0;
+  }
+
   .hello-container .overview {
     text-align: center;
-    padding: 60px 40px;
+    padding: 0 40px;
+    padding-bottom: 60px;
+  }
+
+  .sign-in-container {
+    display: grid;
   }
 
   .sign-in-button {
@@ -31,10 +45,9 @@
 }
 
 .hello-container .atltitle {
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   color: #1e255f;
-  font-size: 70px;
+  font-size: 4rem;
 }
 
 .hello-container .atltitle:hover {
@@ -42,10 +55,9 @@
 }
 
 .hello-container .slogan {
-  font-family: "Noto Sans", sans-serif;
   font-weight: 100;
-  color: #888888;
-  font-size: 14px;
+  color: #5f5e5e;
+  font-size: 1rem;
   margin-bottom: 20px;
 }
 
@@ -54,19 +66,17 @@
 }
 
 .sign-in-button {
-  justify-self: center;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.5em;
   border-radius: 2em;
   box-sizing: border-box;
   border: solid 0.5px #cccccc;
   text-align: center;
   text-decoration: none;
-  font-family: "Noto Sans", sans-serif;
   color: #272741;
   width: 200px;
   padding: 10px;
   display: block;
-  transition: background-color 0.1s ease-in;
+  transition: all 0.1s ease-in-out;
 }
 
 .sign-in-button.google {
