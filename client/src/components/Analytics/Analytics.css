@@ -1,6 +1,3 @@
-
-
-
 .analytics .title {
     font-size:18px;
     font-weight:bold;
@@ -30,29 +27,127 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-body{ margin:0}
+body{
+     margin:0
+}
 
 
-.hello-background .banner{  height:38vw; background:url(img/top.jpg) center top no-repeat; background-size:100% auto}
-.hello-background .banner h1{ font-size:5vw; margin:0; padding-top:14vw; padding-left:80px}
-.hello-background{ background:#faf6f3 }
-.hello-background .analytics .toptitle{ font-size:28px; font-weight:bold; text-align:center; margin:0;  padding-top:30px;}
-.hello-background .div{ width:46%; margin:2%; float:left; border-radius:20px; padding:40px; box-shadow: 8px 20px 20px 5px rgba(0,0,0,0.15); background:#fff}
-.hello-background iframe{ background:#faf6f3; border:none;}
+.hello-background .banner{  
+    height:38vw; 
+    background:url(img/top.jpg) center top no-repeat; 
+    background-size:100% auto
+}
 
-.hello-background .wrap:after{ clear:both; content:''; display:block}
-.hello-background .wrap{ padding-left:40px; padding-right:40px; margin:0 auto}
+.hello-background .banner h1{ 
+    font-size:5vw; 
+    margin:0; 
+    padding-top:14vw; 
+    padding-left:80px
+}
 
-.hello-background .list{ display:flex; align-items:center; padding:50px 0}
-.hello-background .dn{ width:60%; padding:20px}
-.hello-background .r-content{ font-size:16px; line-height:24px; width:40%; padding:30px;}
-.hello-background .mybackground{ background:#faf6f3; margin-top:50px;}
-.hello-background .wrap .title{ font-size:24px; font-weight:bold; line-height:34px;}
-.hello-background .listform { text-align:center; padding:50px 0}
-.hello-background .listform .iframebox{ text-align:left}
-.hello-background .iframebox { padding:20px} 
-.hello-background .small-title{ padding-top:10px; margin-top:0px; color:#CC9966}
-.hello-background .small-content{ color:#999; font-size:13px}
-.hello-background .analytics{ background:#fff}
-.hello-background .listform .content{ font-size:16px;}
+.hello-background{ 
+    background:#faf6f3 
+}
+
+.hello-background .analytics .toptitle{ 
+    font-size:28px; 
+    font-weight:bold; 
+    text-align:center; 
+    margin:0;  
+    padding-top:30px;
+}
+
+.hello-background .plot{ 
+    justify-self: center;    
+    border-radius:20px; 
+    margin: 2%;
+    padding: 40px;
+    box-shadow: 8px 20px 20px 5px rgba(0,0,0,0.15); 
+    background:#fff
+}
+
+.hello-background iframe{ 
+    background:#faf6f3; 
+    border:none;
+}
+
+
+.hello-background .wrap:after{ 
+    clear:both; 
+    content:''; 
+    display:block
+}
+
+.hello-background .wrap{ 
+    padding-left:40px; 
+    padding-right:40px; 
+    margin:0 auto
+}
+
+.hello-background .list{ 
+    display:flex; 
+    align-items:center; 
+    padding:50px 0
+}
+
+.hello-background .dn{ 
+    padding:20px
+}
+
+.hello-background .r-content{ 
+    font-size:16px; 
+    line-height:24px; 
+    padding:30px;
+}
+
+.hello-background .mybackground{ 
+    background:#faf6f3; 
+    margin-top:50px;
+}
+
+.hello-background .wrap .title{ 
+    font-size:24px; 
+    font-weight:bold; 
+    line-height:34px;
+}
+
+.hello-background .listform { 
+    text-align:center; 
+    padding:50px 0
+}
+
+.hello-background .listform .iframebox{ 
+    text-align:left
+}
+
+.hello-background .iframebox { 
+    padding:20px
+} 
+
+.hello-background .small-title{ 
+    padding-top:10px; 
+    margin-top:0px; 
+    color:#CC9966
+}
+
+.hello-background .small-content{ 
+    color:#999; 
+    font-size:13px
+}
+
+.hello-background .analytics{ 
+    background:#fff
+}
+
+.hello-background .listform .content{ 
+    font-size:16px;
+}
+
+
+@media (max-width: 996px) {
+    .hello-background .line {
+        border-bottom: 1px solid #ccc;
+    }
+    
+}
 
