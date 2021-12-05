@@ -44,7 +44,7 @@ function Analytics() {
               ></iframe>
             </div>
           </div>
-          <div className="div col-12 collgd-6">
+          <div className="div col-12 col-lg-6">
             <div className="plot">
               <iframe
                 title="Top 10 neighborhood"

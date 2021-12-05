@@ -119,7 +119,7 @@ function Recommendations(props) {
             <p key={i}>{line}</p>
           ))}
         </div>
-        <p className="apt-score">{totalScore.toFixed(2)}</p>
+        <p className="apt-score">{((1 - totalScore) * 10).toFixed(2)}</p>
       </div>
     );
   };
