@@ -49,9 +49,10 @@ function Recommendations(props) {
 
   // When component is mounted, add event listener to track window resize and update list height
   useEffect(() => {
-    window.addEventListener("resize", () =>
-      setListHeight(window.innerHeight - listHeightOffset)
-    );
+    window.addEventListener("resize", () => {
+      console.log("resize");
+      setListHeight(window.innerHeight - listHeightOffset);
+    });
   }, []);
 
   // When user selects/unselects a new type of place, update ranked list
