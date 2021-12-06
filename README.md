@@ -72,6 +72,7 @@ node -v
 ## Usage
 
 1. To start the frontend server:
+
     Paste the Google Maps API key you created earlier at `<Your Google Maps API key>`:
     ```
     export REACT_APP_GOOGLE_API_KEY=<Your Google Maps API key>
@@ -82,6 +83,7 @@ node -v
     npm start
     ```
 2. To start the backend server:
+
     Create a `config.env` file in the `atl-living-safe-00/server/config` folder and paste all other tokens you created earlier into it. **Please do NOT change the variable names.**
     ```
     PORT = 5000
