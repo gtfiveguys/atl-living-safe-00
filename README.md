@@ -79,7 +79,7 @@ node -v
     ```
     In the same terminal window, run the following lines:
     ```
-    cd atl-living-safe/client
+    cd atl-living-saf-00/client
     npm start
     ```
 2. To start the backend server:
@@ -94,7 +94,7 @@ node -v
     ```
     **Open a new terminal window** and run the following lines:
     ```
-    cd atl-living-safe/server
+    cd atl-living-safe-00/server
     npm run dev
     ```
     You should now have two terminal windows, each running a server.
